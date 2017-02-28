@@ -1,0 +1,23 @@
+Initialization files for darco:
+
+protocol.ini: determines the external input to the network. On each line the stimulation to one pool is set.
+
+		 First column: duration of the stimulation in ms; durations equal to 0 be considered equal
+		 to the first non-zero duration. This means that for stimulating more then one pool at the
+		 same time you have to put 0 duration to the first ones and the desired duration to the last.
+
+		 Second column: the pool that will be stimulated. Pools are usually numbered as follows:
+		 0: inhibitory, 1 to N: selective pools, N+1: non-selective pool.
+
+		 Third column: stimulation intensity in Hz (this is considered to be the firing rate of
+		 external neurons projecting to the network). In the resting state this value is usually taken
+		 to be 3 Hz (from 800 neurons).
+
+connectivity.ini: strength of connection between pools. Conductancies are defined in the code. 
+
+neurons.ini: biophysical parameters of neurons
+
+pfc.ini: defines the architecture of the network.
+	First col: pool ID
+	Second col: numeber of neurons
+	Third col: excitatory flag (1 if the pool is excitatory, 0 otherwise) 

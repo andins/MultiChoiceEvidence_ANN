@@ -1,0 +1,12 @@
+# duration	pool	external_rate
+
+# spontaneous stage
+	0	0	3.000
+	0	1	3.000
+	0	2	3.000
+	500	3	3.000
+# stimulus
+	0	0	3.000
+	0	1	3.075
+	0	2	3.050
+	500 	3	3.000
